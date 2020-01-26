@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ambrogio/menu_page.dart';
 
 void main() => runApp(App());
 
@@ -11,29 +12,7 @@ class App extends StatelessWidget {
         primarySwatch: Colors.red,
         accentColor: Colors.red,
       ),
-      home: HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatefulWidget {
-  HomePage({Key key}) : super(key: key);
-  @override
-  _HomePageState createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Ambrogio'),
-      ),
-      body: Center(
-        child: Text(
-          'Ambrogio App',
-        ),
-      ),
+      home: MenuPage(),
     );
   }
 }
