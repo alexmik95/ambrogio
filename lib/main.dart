@@ -8,7 +8,8 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'Ambrogio',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
+        accentColor: Colors.red,
       ),
       home: HomePage(),
     );
